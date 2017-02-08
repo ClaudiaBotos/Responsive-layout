@@ -11,12 +11,11 @@ body {
  font-family: 'Lora', 'Source Sans Pro', serif, sans-serif;
 line-height: 1.6;
 color: #003264;
+background-color: #f6f6f6;
 
 }
 
-header {
-    background-color: #fff;
-}
+
 
 
 img {
@@ -92,12 +91,18 @@ nav ul {
     background-color: #f6f6f6;
 }
 
-.container {
- margin-right: 15px;
+.home,
+.skills{
+    margin-right: 15px;
     padding-left: 15px;
     text-align: center;
 }
 
+#portfolio {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 
 
@@ -142,8 +147,19 @@ ul.list {
     
     }
 
-.contact {
+#contact {
     padding-top: 20px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left:  10px;
+}
+
+.contact-info{
+    display: inline-block;
+    width:90%;
+    align-items: center;
+    padding: 0;
+
 }
 
 h5 {
@@ -185,7 +201,7 @@ hr {
 **********************/
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 720px) {
     
     .main-nav li {
         display:inline-block;
@@ -200,7 +216,7 @@ hr {
     }
     
     .main-nav a {
-        background-color: #fff;
+        background-color: #f6f6f6;
     }
     
     
@@ -217,20 +233,27 @@ hr {
        }
     
     #portfolio{
-        margin: auto;
+       margin:auto;
+       padding-right: 10px;
+        padding-left: 10px;
     }
     
-    .portfolio {
-        max-width: 300px;
-        float: left;
-        margin: 20px;
-        
+
+    .col {
+        display: inline-block;
+        width: 50%;
+        margin-right: -4px;
+        vertical-align: top;
+        padding-left: 10px;
+        padding-right: 10px
+       
     }
     
     
     #contact {
     margin: auto;
     max-width: 70%;
+    
       }
     
     .top{
@@ -241,18 +264,23 @@ hr {
         display: inline;
         visibility: visible;
         float: right;
+        margin-right: -75px;
         }
     
     .name-footer {
         float:left;
-        margin-left: 100px;
+        margin-left: 40px;
+        
     }
     
+    
+    
     .footer-nav li {
-        display: inline;
+        display: inline-block;
         font-weight: bold;
-        margin: 10px;
+        margin-right: 10px;
         }
+    
     
 }
 
@@ -308,17 +336,16 @@ hr {
     
     #portfolio {
        background-color: #FFF;
-        width:90%
+    padding: 0;
+   }
     
-    }
-    
-    .portfolio {
-        max-width: 350px;
-        float: left;
-        margin:25px;
-        
-        
-    }
+    .col {
+    width:30% ;
+}
+
+#portfolio li:nth-child(4n) {
+clear: left;
+ }
     
     
     #contact {
@@ -328,9 +355,18 @@ hr {
     
     
     
+    .name-footer {
+        margin-left: 75px;
+    }
     
-  
-  
+    
+    
+    .footer-nav {
+        margin-right: -40px;
+        }
+    
+    
+}
     
  
     
